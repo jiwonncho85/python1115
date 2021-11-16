@@ -53,6 +53,12 @@ lst = [1,2,3,4,5]
 for item in map(lambda x:x+10, lst):
     print(item)
 
+print("---맵함수2---")
+iterM = map(lambda x:x+10, lst)
+for item in iterM:
+    print(item)
+
+
 
 
 
