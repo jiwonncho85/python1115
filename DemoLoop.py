@@ -29,7 +29,8 @@ result = [v.upper() for v in d.values()]
 print(result)
 
 # 필터링하는 함수
-
+# 이름 규칙: 변수명, 함수명, 메서드명은 키맵 표기법
+# 클래스명: 파스컬 표기법(각 단어의 첫글자를 대문자 표기)
 print("---필터링 함수---")
 def getBiggerThan20(i):
     return i>20
@@ -38,4 +39,20 @@ lst = [10, 25, 30]
 iterL = filter(getBiggerThan20, lst)
 for item in iterL:
     print(item)
+
+
+print("---람다 함수 사용---")
+iterL = filter(lambda x:x>20, lst)
+for item in iterL:
+    print(item)
+
+
+print("---맵함수---")
+# 스칼라(단일값) 리스트
+lst = [1,2,3,4,5]
+for item in map(lambda x:x+10, lst):
+    print(item)
+
+
+
 
