@@ -59,3 +59,15 @@ print( userURIBuilder("naver.com", "80", passwd="1234", id = "kim", \
     name = "mike"))
 
 
+# 람다함수 : 익명함수
+g = lambda x, y:x*y
+print( g(3,4) )
+print( g(5,4) )
+print( (lambda x:x*x)(3))
+print( globals() )
+
+
+
+
+
+
